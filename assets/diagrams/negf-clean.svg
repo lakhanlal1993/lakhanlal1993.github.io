@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
+  <title id="title">Conceptual two-terminal NEGF device</title>
+  <desc id="desc">A left source electrode and right drain electrode are connected through a central material channel. An arrow shows transmission under an applied bias. The left and right electrochemical potentials are labelled mu sub L and mu sub R.</desc>
+  <defs>
+    <linearGradient id="channel" x1="0" x2="1"><stop stop-color="#12344c"/><stop offset=".5" stop-color="#174d67"/><stop offset="1" stop-color="#12344c"/></linearGradient>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9Z" fill="#55d3df"/></marker>
+    <g id="atom"><circle r="8" fill="#153e57" stroke="#55b8cb" stroke-width="2"/><circle r="2.2" fill="#b9f2f1"/></g>
+  </defs>
+  <rect x="18" y="22" width="884" height="316" rx="8" fill="#0d263a" stroke="#28485e"/>
+
+  <text x="169" y="83" text-anchor="middle" fill="#c8d9e4" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5">SOURCE ELECTRODE</text>
+  <text x="460" y="83" text-anchor="middle" fill="#c8d9e4" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5">MATERIAL CHANNEL</text>
+  <text x="751" y="83" text-anchor="middle" fill="#c8d9e4" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.5">DRAIN ELECTRODE</text>
+
+  <rect x="57" y="103" width="224" height="163" rx="4" fill="#102d43" stroke="#315770"/>
+  <rect x="281" y="103" width="358" height="163" fill="url(#channel)" stroke="#3a8095"/>
+  <rect x="639" y="103" width="224" height="163" rx="4" fill="#102d43" stroke="#315770"/>
+  <path d="M281 103v163M639 103v163" stroke="#8fc9d1" stroke-dasharray="4 6" opacity=".7"/>
+
+  <g opacity=".95">
+    <use href="#atom" x="85" y="132"/><use href="#atom" x="132" y="132"/><use href="#atom" x="179" y="132"/><use href="#atom" x="226" y="132"/>
+    <use href="#atom" x="85" y="183"/><use href="#atom" x="132" y="183"/><use href="#atom" x="179" y="183"/><use href="#atom" x="226" y="183"/>
+    <use href="#atom" x="85" y="234"/><use href="#atom" x="132" y="234"/><use href="#atom" x="179" y="234"/><use href="#atom" x="226" y="234"/>
+    <use href="#atom" x="678" y="132"/><use href="#atom" x="725" y="132"/><use href="#atom" x="772" y="132"/><use href="#atom" x="819" y="132"/>
+    <use href="#atom" x="678" y="183"/><use href="#atom" x="725" y="183"/><use href="#atom" x="772" y="183"/><use href="#atom" x="819" y="183"/>
+    <use href="#atom" x="678" y="234"/><use href="#atom" x="725" y="234"/><use href="#atom" x="772" y="234"/><use href="#atom" x="819" y="234"/>
+  </g>
+  <g fill="#52c6d7" stroke="#9ae7e8" stroke-width="1.5">
+    <circle cx="328" cy="143" r="12"/><circle cx="381" cy="224" r="12"/><circle cx="432" cy="145" r="12"/><circle cx="483" cy="222" r="12"/><circle cx="536" cy="145" r="12"/><circle cx="590" cy="223" r="12"/>
+  </g>
+  <path d="m328 143 53 81 51-79 51 77 53-77 54 78" fill="none" stroke="#58bfcf" stroke-width="2"/>
+  <path d="M350 184H565" fill="none" stroke="#55d3df" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="458" y="173" text-anchor="middle" fill="#e0fbfb" font-family="Arial,sans-serif" font-size="12" letter-spacing="1">TRANSMISSION</text>
+
+  <text x="67" y="305" fill="#a9c1d0" font-family="Arial,sans-serif" font-size="17">μ<tspan baseline-shift="sub" font-size="11">L</tspan></text>
+  <text x="96" y="305" fill="#7897aa" font-family="Arial,sans-serif" font-size="12">source chemical potential</text>
+  <text x="460" y="305" text-anchor="middle" fill="#a9c1d0" font-family="Arial,sans-serif" font-size="12" letter-spacing="1">APPLIED BIAS · V</text>
+  <text x="703" y="305" fill="#a9c1d0" font-family="Arial,sans-serif" font-size="17">μ<tspan baseline-shift="sub" font-size="11">R</tspan></text>
+  <text x="733" y="305" fill="#7897aa" font-family="Arial,sans-serif" font-size="12">drain chemical potential</text>
+</svg>
