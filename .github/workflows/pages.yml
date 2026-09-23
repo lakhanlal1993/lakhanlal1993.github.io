@@ -1,0 +1,47 @@
+name: Build and publish portfolio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * 1'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh cached Scholar publications
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: node scripts/sync-scholar.mjs
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Assemble public site files
+        run: |
+          mkdir _site
+          cp index.html styles.css app.js site-config.js privacy.html _site/
+          cp -R assets content _site/
+          touch _site/.nojekyll
+      - name: Upload site files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
