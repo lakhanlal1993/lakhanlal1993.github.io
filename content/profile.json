@@ -1,0 +1,53 @@
+{
+  "name": "Lakhan Lal",
+  "role": "Postdoctoral Researcher in Computational Materials Science",
+  "location": "Haifa, Israel",
+  "email": "lakhanlall@campus.technion.ac.il",
+  "emailAlt": "lakhanlal.nitk@gmail.com",
+  "phoneIsrael": "+972-58-361-9247",
+  "phoneIndia": "+91-7320002375",
+  "portrait": "assets/images/lakhan-lal.jpg",
+  "cv": "assets/files/Lakhan-Lal-CV.pdf",
+  "intro": "I study how atomic structure, electronic transport and catalytic activity come together in materials for energy conversion. At Technion, my work spans electrocatalysis, photocatalysis and zeolites for CO₂-to-fuel conversion.",
+  "researchAreas": [
+    {"number":"01","title":"Electrocatalysis","text":"Transition-metal oxides and oxyhydroxides for oxygen evolution, water splitting and hydrogen production."},
+    {"number":"02","title":"Photocatalysis","text":"Metal-organic frameworks and functional materials for light-driven hydrogen and ammonia synthesis."},
+    {"number":"03","title":"Electronic transport","text":"First-principles electronic structure and non-equilibrium Green's function (NEGF) methods to connect conductivity with catalytic performance."},
+    {"number":"04","title":"Thermal catalysis & electrolysis","text":"Functional oxides, solid oxide cells and co-electrolysis of steam and CO₂ for energy conversion."},
+    {"number":"05","title":"Zeolites & CO₂ conversion","text":"Postdoctoral research on zeolites for conversion of CO₂ to fuels."}
+  ],
+  "education": [
+    {"year":"2010","degree":"Certificate in Automobiles & Farm Machinery","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India"},
+    {"year":"2012","degree":"Diploma in Industrial & Production Engineering","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India"},
+    {"year":"2015","degree":"B.E. in Mechanical Engineering (Welding Technology)","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India"},
+    {"year":"2019","degree":"M.Tech. in Energy Technology · Distinction","institution":"Tezpur University, Assam, India"},
+    {"year":"2022–2026","degree":"Ph.D. in Materials Science and Engineering","institution":"Technion – Israel Institute of Technology, Haifa, Israel","thesis":"Computational Study of Water Oxidation Reaction Activity and Electronic Conductivity in Transition Metal-Doped Nickel Oxyhydroxide Electrocatalysts"}
+  ],
+  "experience": [
+    {"dates":"Jul 2026 – present","role":"Postdoctoral Researcher","place":"Technion – Israel Institute of Technology","detail":"Department of Materials Science and Engineering · Zeolites for CO₂-to-fuel conversion."},
+    {"dates":"Aug 2019 – Feb 2022","role":"Senior Research Fellow","place":"National Institute of Technology Karnataka","detail":"Solid oxide electrolysis, CO₂/H₂O co-electrolysis, and electrode and electrolyte materials."}
+  ],
+  "skills": [
+    {"group":"Computational science","items":["SIESTA","VASP","Density functional theory","Electronic-structure analysis","Python for scientific computing","NEGF methods"]},
+    {"group":"Electrochemistry & cell testing","items":["Cyclic and linear-sweep voltammetry","Electrochemical impedance spectroscopy","Solid oxide electrolysis cell testing","Steam/CO₂ co-electrolysis"]},
+    {"group":"Characterization","items":["X-ray diffraction","FTIR","X-ray photoelectron spectroscopy","Scanning electron microscopy","Raman spectroscopy","Gas chromatography"]},
+    {"group":"Materials synthesis","items":["Solution combustion","Co-precipitation","Citrate complexation","Metal-oxide electrodes and electrolytes"]}
+  ],
+  "gate": "Qualified in GATE 2017 (Mechanical Engineering) and GATE 2019 (Engineering Sciences: Thermodynamics and Materials Science).",
+  "hobby": "Away from the research desk, I enjoy nature photography and spending time with cats. I am a cat person.",
+  "social": [
+    {"name":"LinkedIn","href":"https://www.linkedin.com/in/lakhanlal/","mark":"in"},
+    {"name":"Google Scholar","href":"https://scholar.google.com/citations?user=RjztNlIAAAAJ&hl=en","mark":"GS"},
+    {"name":"ResearchGate","href":"https://www.researchgate.net/profile/Lakhan-Lal","mark":"RG"},
+    {"name":"ORCID","href":"https://orcid.org/0000-0002-3582-3854","mark":"iD"},
+    {"name":"GitHub · Lakhan Lal","href":"https://github.com/lakhanlal1993","mark":"GH"},
+    {"name":"YouTube · FOSS Computations","href":"https://www.youtube.com/@FOSSComputations","mark":"▶"},
+    {"name":"FOSS Computations","href":"https://www.fosscomputations.co.in","mark":"FOSS"},
+    {"name":"Open positions","href":"https://positions.fosscomputations.co.in","mark":"↗"}
+  ],
+  "foss": {
+    "title":"Open tools. Shared compute. Practical training.",
+    "body":"I founded FOSS Computations to help researchers learn and use free and open-source scientific software through practical training and computational resources. Our 256-core computation server is installed with scientific software and packages.",
+    "focus":"Our current focus is materials science. We plan to expand into electronics, machine learning and AI training."
+  }
+}

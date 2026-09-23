@@ -1,0 +1,22 @@
+{
+  "lastUpdated": "Manually checked against the CV · 23 September 2026",
+  "scholarUrl": "https://scholar.google.com/citations?user=RjztNlIAAAAJ&hl=en",
+  "citationMetrics": null,
+  "items": [
+    {"title":"Development of Ternary Transition Metal Oxide Catalysts for Oxygen Evolution Reaction","journal":"ACS Applied Energy Materials","year":2026,"doi":"10.1021/acsaem.6c01325","type":"Journal article"},
+    {"title":"Photocatalytic Ammonia Synthesis Using Fe-Based MOFs: The Role of Ligand Functionalization","journal":"Journal of the American Chemical Society","year":2026,"doi":"10.1021/jacs.5c22833","type":"Journal article","image":"assets/images/jacs-cover.jpeg"},
+    {"title":"Toward Efficient Hydrogen Production: Impact of Solid Solution of Tungsten on Nickel-Iron Hydroxide OER Catalysts","journal":"ACS Catalysis","year":2026,"doi":"10.1021/acscatal.5c07061","type":"Journal article","image":"assets/images/acs-catalysis-cover.jpeg"},
+    {"title":"Electrochemical Performance of CO₂ Electrolysis in an Electrolyte-Supported Solid Oxide Electrolysis Cell","journal":"Discover Electrochemistry","year":2025,"doi":"10.1007/s44373-025-00021-1","type":"Journal article"},
+    {"title":"Effect of Heat Treatment on Improving OER Activity of NiFeOOH-Based Aerogels: A Combined Experimental and Theoretical Study","journal":"Molecular Catalysis","year":2024,"doi":"10.1016/j.mcat.2024.114164","type":"Journal article","image":"assets/images/molecular-catalysis-cover.jpg"},
+    {"title":"Current-Voltage (i-V) Characteristics of an Electrolyte-Supported Solid Oxide Electrolysis Cell during CO₂/H₂O Co-Electrolysis","journal":"Chemical Physics Impact","year":2024,"doi":"10.1016/j.chphi.2024.100670","type":"Journal article"},
+    {"title":"The Emergence of 2D Building Units in Metal-Organic Frameworks for Photocatalytic Hydrogen Evolution: A Case Study with COK-47","journal":"Advanced Energy Materials","year":2023,"doi":"10.1002/aenm.202300961","type":"Journal article","image":"assets/images/advanced-energy-materials-cover.jpg"},
+    {"title":"Filling the Gaps on the Relation between Electronic Conductivity and Catalysis of Electrocatalysts for Water Splitting Using Computational Modelling","journal":"Current Opinion in Electrochemistry","year":2023,"doi":"10.1016/j.coelec.2023.101342","url":"https://www.sciencedirect.com/science/article/abs/pii/S2451910323001357","type":"Review","image":"assets/images/current-opinion-electrochemistry-cover.jpg"},
+    {"title":"Electrical Conductivity Studies on LAMOX-Based Electrolyte Materials for Solid Oxide Fuel Cells","journal":"Ceramics International","year":2022,"doi":"10.1016/j.ceramint.2022.05.198","type":"Journal article"},
+    {"title":"Dilatometer Studies on LAMOX-Based Electrolyte Materials for Solid Oxide Fuel Cells","journal":"Materials Chemistry and Physics","year":2021,"doi":"10.1016/j.matchemphys.2020.123958","type":"Journal article"},
+    {"title":"Recent Advancement in Rechargeable Battery Technologies","journal":"WIREs Energy and Environment","year":2022,"doi":"10.1002/wene.461","type":"Review"},
+    {"title":"Promotional Effect of Nickel Addition on Soot Oxidation Activity of Ce₀.₉Pr₀.₁O₂ Oxide Catalysts","journal":"Chemical Papers","year":2020,"doi":"10.1007/s11696-020-01275-2","type":"Journal article"},
+    {"title":"Synthesis of Nitrogen- and Sulfur-Nitrogen-Co-Doped Carbon-Based Oxygen Reduction Reaction Catalyst from Rice Straw and Reeling Waste of Muga Silk","journal":"Materials Today: Proceedings","year":2021,"doi":"10.1016/j.matpr.2021.10.267","type":"Conference proceeding"},
+    {"title":"Shrinkage Behavior, Thermal Expansion Behavior, and Electrical Conductivity Study of Samarium-Doped Ceria Electrolytes","journal":"ECS Transactions","year":2021,"doi":"10.1149/10301.1239ecst","type":"Conference proceeding"},
+    {"title":"A Density Functional Theory Study of the Formation, Interaction, and Electronic Activity of Carbon and Oxygen Defects at the 4H-SiC(0001)/SiO₂ Interface","journal":"Materials Today Communications","year":null,"type":"Submitted manuscript","status":"Submitted manuscript — not yet published"}
+  ]
+}
