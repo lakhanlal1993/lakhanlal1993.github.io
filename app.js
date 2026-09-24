@@ -85,3 +85,31 @@ async function init() {
   const t=$('.menu-toggle'),nav=$('#main-nav');t.addEventListener('click',()=>{const open=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');t.setAttribute('aria-expanded','false');}});
 }
 init();
+// Make every publication row open its paper in a new tab.
+(() => {
+  const list = document.querySelector('#publication-list');
+  if (!list) return;
+  const wireRows = () => list.querySelectorAll('.publication-row').forEach(row => {
+    if (row.dataset.rowLinkReady) return;
+    const paperLink = row.querySelector('.pub-link a');
+    if (!paperLink?.href) return;
+    row.dataset.rowLinkReady = 'true';
+    row.tabIndex = 0;
+    row.setAttribute('role', 'link');
+    row.setAttribute('aria-label', 'Open publication: ' + (row.querySelector('h3')?.textContent || ''));
+    row.style.cursor = 'pointer';
+    const openPaper = event => {
+      if (event.target.closest('a')) return;
+      window.open(paperLink.href, '_blank', 'noopener,noreferrer');
+    };
+    row.addEventListener('click', openPaper);
+    row.addEventListener('keydown', event => {
+      if ((event.key === 'Enter' || event.key === ' ') && !event.target.closest('a')) {
+        event.preventDefault();
+        window.open(paperLink.href, '_blank', 'noopener,noreferrer');
+      }
+    });
+  });
+  new MutationObserver(wireRows).observe(list, { childList: true });
+  wireRows();
+})();
