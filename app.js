@@ -15,7 +15,7 @@ function ensureSections() {
   }
   const gallery = document.createElement('section'); gallery.className='gallery-section section-pad'; gallery.id='gallery'; gallery.innerHTML='<div class="section-wrap"><div class="section-heading"><div><p class="eyebrow">Field notes &amp; moments</p><h2>Photo <em>gallery.</em></h2></div><p class="section-lead">Research, travel and everyday moments.</p></div><div class="gallery-grid" id="gallery-grid"></div></div>';
   if (!$('#gallery')) $('.projects-section')?.before(gallery);
-  if (!$('#audience')) {
+  if (false) {
     const audience=document.createElement('section'); audience.className='audience-section'; audience.id='audience'; audience.innerHTML='<div class="section-wrap audience-inner"><div><p class="eyebrow">Site readership</p><h2>Visitor <em>overview.</em></h2><p class="audience-note">Aggregate figures only. Recent visitor locations are not published.</p></div><div class="audience-data" id="audience-data"></div><a class="analytics-report-link" href="https://analytics.google.com/analytics/web/" target="_blank" rel="noopener noreferrer">Open Google Analytics reports ↗</a></div>';
     $('footer.site-footer')?.before(audience);
   }
@@ -80,7 +80,7 @@ function setupAnalytics() {
 }
 async function init() {
   try { ensureSections(); const [p,c,pubs,f,projects,g,a]=await Promise.all([read('content/profile.json'),read('content/covers.json'),read('content/publications.json'),read('content/featured.json'),read('content/projects.json'),read('content/gallery.json'),read('content/analytics-summary.json')]);
-    renderProfile(p);renderCovers(c);renderPublications(pubs,f);renderProjects(projects);renderGallery(g);renderAudience(a);setupAnalytics();setupAnimations();
+    renderProfile(p);renderCovers(c);renderPublications(pubs,f);renderProjects(projects);renderGallery(g);setupAnalytics();setupAnimations();
   } catch(e){console.error(e);const n=document.createElement('p');n.className='load-error';n.textContent='Some page content could not be loaded. Please refresh or check the site data files.';$('main').prepend(n);}
   const t=$('.menu-toggle'),nav=$('#main-nav');t.addEventListener('click',()=>{const open=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');t.setAttribute('aria-expanded','false');}});
 }
