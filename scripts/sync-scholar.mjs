@@ -9,6 +9,13 @@ if (!apiKey) {
 
 const cleanTitle = value => String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const toNumber = value => { const found = String(value ?? '').replace(/,/g, '').match(/\d+/); return found ? Number(found[0]) : null; };
+const publicationYear = article => {
+  const supplied = toNumber(article.publication_info?.pub_year);
+  if (supplied && supplied >= 1900 && supplied <= new Date().getFullYear() + 1) return supplied;
+  const summary = article.publication_info?.summary || article.publication || '';
+  const years = [...String(summary).matchAll(/\b(?:19|20)\d{2}\b/g)].map(match => Number(match[0]));
+  return years.find(year => year >= 1900 && year <= new Date().getFullYear() + 1) || null;
+};
 const pageSize = 20;
 const query = new URLSearchParams({engine:'google_scholar_author',author_id:authorId,hl:'en',num:String(pageSize)});
 const articles = [];
@@ -44,26 +51,24 @@ const synced = articles.map(article => {
   });
   const doi = previous?.doi || (/doi\.org\/(10\.[^\s/?]+)/i.exec(article.link || '')?.[1] || null);
   const summary = article.publication_info?.summary || article.publication || '';
+  const priorType = previous?.type;
+  const type = !priorType || priorType === 'Google Scholar record' || priorType === 'Submitted manuscript' ? 'Journal article' : priorType;
   return {
     ...(previous || {}),
     title: previous?.title || title,
     journal: previous?.journal || summary || 'Google Scholar record',
-    year: previous?.year || article.publication_info?.pub_year || null,
+    year: publicationYear(article) || previous?.year || null,
     ...(doi ? {doi} : {}),
     ...(!previous && article.link ? {url:article.link} : {}),
-    type: previous?.type || 'Google Scholar record',
+    type,
+    status: 'Published',
     citations: toNumber(article.cited_by?.value)
   };
 });
 const next = {
   lastUpdated: current.lastUpdated,
   scholarUrl: `https://scholar.google.com/citations?user=${authorId}&hl=en`,
-  citationMetrics: {
-    citations: metric('citations'),
-    hIndex: metric('h_index'),
-    i10Index: metric('i10_index'),
-    syncedAt: new Date().toISOString().slice(0,10)
-  },
+  citationMetrics: { citations: metric('citations'), hIndex: metric('h_index'), i10Index: metric('i10_index'), syncedAt: new Date().toISOString().slice(0,10) },
   items: [...synced,...curated]
 };
 await writeFile(file,`${JSON.stringify(next,null,2)}\n`);
