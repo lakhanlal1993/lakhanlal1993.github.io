@@ -2,8 +2,8 @@
   "name": "Lakhan Lal",
   "role": "Postdoctoral Researcher in Computational Materials Science",
   "location": "Haifa, Israel",
-  "email": "lakhanlall@campus.technion.ac.il",
-  "emailAlt": "lakhanlal.nitk@gmail.com",
+  "email": "lakhanlal.nitk@gmail.com",
+  "emailAlt": "lakhanlall@campus.technion.ac.il",
   "phoneIsrael": "+972-58-361-9247",
   "phoneIndia": "+91-7320002375",
   "portrait": "assets/images/lakhan-lal.jpg",
@@ -17,11 +17,11 @@
     {"number":"05","title":"Zeolites & CO₂ conversion","text":"Postdoctoral research on zeolites for conversion of CO₂ to fuels."}
   ],
   "education": [
-    {"year":"2010","degree":"Certificate in Automobiles & Farm Machinery","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India"},
-    {"year":"2012","degree":"Diploma in Industrial & Production Engineering","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India"},
-    {"year":"2015","degree":"B.E. in Mechanical Engineering (Welding Technology)","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India"},
-    {"year":"2019","degree":"M.Tech. in Energy Technology · Distinction","institution":"Tezpur University, Assam, India"},
-    {"year":"2022–2026","degree":"Ph.D. in Materials Science and Engineering","institution":"Technion – Israel Institute of Technology, Haifa, Israel","thesis":"Computational Study of Water Oxidation Reaction Activity and Electronic Conductivity in Transition Metal-Doped Nickel Oxyhydroxide Electrocatalysts"}
+    {"year":"2022–2026","degree":"Ph.D. in Materials Science and Engineering","institution":"Technion – Israel Institute of Technology, Haifa, Israel","result":"GPA: 94.7/100","thesis":"Computational Study of Water Oxidation Reaction Activity and Electronic Conductivity in Transition Metal-Doped Nickel Oxyhydroxide Electrocatalysts"},
+    {"year":"2019","degree":"M.Tech. in Energy Technology · Distinction","institution":"Tezpur University, Assam, India","result":"CGPA: 8.64/10"},
+    {"year":"2015","degree":"B.E. in Mechanical Engineering (Welding Technology)","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India","result":"CGPA: 7.39/10"},
+    {"year":"2012","degree":"Diploma in Industrial & Production Engineering","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India","result":"Aggregate: 73.35%"},
+    {"year":"2010","degree":"Certificate in Automobiles & Farm Machinery","institution":"Sant Longowal Institute of Engineering & Technology (SLIET), Longowal, Punjab, India","result":"Aggregate: 74.75%"}
   ],
   "experience": [
     {"dates":"Jul 2026 – present","role":"Postdoctoral Researcher","place":"Technion – Israel Institute of Technology","detail":"Department of Materials Science and Engineering · Zeolites for CO₂-to-fuel conversion."},
@@ -37,6 +37,7 @@
   "hobby": "Away from the research desk, I enjoy nature photography and spending time with cats. I am a cat person.",
   "social": [
     {"name":"LinkedIn","href":"https://www.linkedin.com/in/lakhanlal/","mark":"in"},
+    {"name":"X · Lakhan Lal","href":"https://x.com/Lakhan_energy","mark":"X"},
     {"name":"Google Scholar","href":"https://scholar.google.com/citations?user=RjztNlIAAAAJ&hl=en","mark":"GS"},
     {"name":"ResearchGate","href":"https://www.researchgate.net/profile/Lakhan-Lal","mark":"RG"},
     {"name":"ORCID","href":"https://orcid.org/0000-0002-3582-3854","mark":"iD"},
